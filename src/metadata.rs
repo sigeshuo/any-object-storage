@@ -46,7 +46,7 @@ impl ObjectMetadata {
             Ok(date) => {
                 Some(date)
             }
-            Err(e) => {
+            Err(_e) => {
                 debug!("Last modified parsed failed.{}", e);
                 None
             }
@@ -64,7 +64,7 @@ impl ObjectMetadata {
             Ok(date) => {
                 Some(date)
             }
-            Err(e) => {
+            Err(_e) => {
                 debug!("Expiration time parsed failed.{}", e);
                 None
             }
